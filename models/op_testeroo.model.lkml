@@ -17,6 +17,7 @@ explore: billion_orders {
     relationship: many_to_one
   }
 
+
   join: users {
     type: left_outer
     sql_on: ${orders.user_id} = ${users.id} ;;
@@ -25,6 +26,8 @@ explore: billion_orders {
 }
 
 explore: connection_reg_r3 {}
+
+
 
 
 explore: events {
